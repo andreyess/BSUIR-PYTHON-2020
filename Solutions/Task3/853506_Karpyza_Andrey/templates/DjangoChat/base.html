@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{% static "css/animated_header.css" %}" />
+    {% block head %} {% endblock head %}
+    <title>{% block title %}BlockOfBlogs{% endblock title %}</title>
+</head>
+<body>
+    <div>
+        <header>
+
+        <a>BlockOfBlogs</a>
+        <p></p>
+        {% block header%}{% endblock header %}
+        <nav>
+        <ul class="topmenu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/login/" class="down">Account</a>
+            <ul class="submenu">
+                <li><div>
+                    {% if request.user.is_authenticated %}
+                        <p>
+                        Здравствуйте, {{ request.user.first_name }}
+                        <a href="/password-change/" class="down">Change your password</a>
+                        <a href="/logout" class="down">Logout</a>
+                        </p>
+                    {% else %}
+                        <p>
+                        Вы не вошли в аккаунт!
+                        <a href="/login/" class="down">Login</a>
+                        <a href="/register/" class="down">Registration</a>
+                        </p>
+
+                    {% endif %}
+                </div></li>
+            </ul>
+            </li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+        </nav>
+    </header>
+    </div>
+    <div>
+        <main>{% block content%}{% endblock content %}</main>
+    </div>
+    <div>
+        <footer >
+            <div>
+                <p><a href="/license">Лицензионное соглашение</a><br/>
+            Copyright © 2020. BlockOfBlogs.by</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

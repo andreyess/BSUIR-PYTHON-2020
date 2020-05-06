@@ -1,0 +1,20 @@
+{% extends "DjangoChat/base.html" %}
+{% load crispy_forms_tags %}
+{% block head %}
+{% endblock %}
+{% block content %}
+<div class="card">
+<div class="card-body">
+<h4 class="card-title">Log in to your account</h4>
+
+<form method="post">
+{% csrf_token %}
+<input type="hidden" name="next" value="{{ next }}">
+
+{{ form|crispy }}
+<p><a href="/password-reset/">Forgotten your password?</a></p>
+<button type="submit" class="btn btn-primary btn-block">Log in</button>
+</form>
+</div>
+</div>
+{% endblock %}
