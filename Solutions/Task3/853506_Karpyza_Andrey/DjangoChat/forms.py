@@ -4,8 +4,6 @@ from django.contrib.auth.models import User
 
 
 class EmailPostForm(forms.Form):
-    name = forms.CharField(max_length=25)
-    email = forms.EmailField()
     to = forms.EmailField()
     comments = forms.CharField(required=False,
                                widget=forms.Textarea)
@@ -14,7 +12,7 @@ class EmailPostForm(forms.Form):
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
-        fields = ('name', 'email', 'body')
+        fields = ('body',)
 
 
 class UserRegistrationForm(forms.ModelForm):

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{% static "css/acc_style.css" %}" />
+    {% block head %} {% endblock head %}
+    <title>{% block title %}Block Of Blogs{% endblock title %}</title>
+</head>
+<body class ="all">
+    <div class="centered">
+        <header>
+        <span class="title">Block Of Blogs</span>
+        <br>
+        <span class="name">{% block name %}{% endblock %}</span>
+        </header>
+    <main>
+        <div class = "functionality">
+            {% block content%}{% endblock content %}
+        </div>
+    </main>
+
+    </div>
+
+
+    <div>
+        <footer >
+            <div>
+                <p><a href="/license">Лицензионное соглашение</a><br/>
+            Copyright © 2020. BlockOfBlogs.by</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

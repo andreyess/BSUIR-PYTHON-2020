@@ -1,13 +1,12 @@
-{% extends "DjangoChat/base.html" %}
+{% extends "DjangoChat/account_base.html" %}
 
 {% block title %}Create an account{% endblock %}
-
+{% block name %}Create an account{% endblock %}
 {% block content %}
-    <h1>Create an account</h1>
     <p>Please, sign up using the following form:</p>
     <form action="." method="post">
         {{ user_form.as_p }}
         {% csrf_token %}
-        <p><input type="submit" value="Create my account"></p>
+        <p><input type="submit" value="Create my account" class="submit"></p>
     </form>
 {% endblock %}

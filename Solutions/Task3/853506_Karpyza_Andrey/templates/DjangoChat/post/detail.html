@@ -1,40 +1,54 @@
 {% extends "DjangoChat/base.html" %}
+{% load static %}
+{% block head %}<link rel="stylesheet" href="{% static "css/detail.css" %}" />{% endblock %}
 {% block title %}{{ post.title }}{% endblock %}
 {% block content %}
-    <h1>{{ post.title }}</h1>
+    <div class="all">
+    <div class="post">
+         <h1><span>{{ post.title }}</span></h1>
     <p class="date">
-        Published {{ post.publish }} by {{ post.author }}
+        <h2>Published {{ post.publish }} by {{ post.author }}</h2>
     </p>
-{{ post.body|linebreaks }}
+    <h3>{{ post.body|linebreaks }}</h3>
     <p>
         <a href="{% url "DjangoChat:post_share" post.id %}">Share this post</a>
     </p>
-    {% with comments.count as total_comments %}
-    <h2>
-        {{ total_comments }} comment{{ total_comments|pluralize }}
-    </h2>
+        <p>
+            <a href="like" class="no_effects"><img class="like"></a>{{ post.like_count }}
+        </p>
+    </div>
+    <div class="comments">
+        {% with comments.count as total_comments %}
+    <h1>
+        {{ total_comments }}Comments{{ total_comments|pluralize }}
+    </h1>
     {% endwith %}
 
     {% for comment in comments %}
-    <div class="comment">
-        <p class="info">
-            Комментарий № {{ forloop.counter }} by {{ comment.name }}
-            {{ comment.created }}
-        </p>
-        {{ comment.body|linebreaks }}
+    <div>
+        <span class="start_comm">Comment #{{ forloop.counter }}</span>
+        <span class="end_comm">by {{ comment.author.username }}<br>{{ comment.created }}</span>
+        <p class="comm_info">{{ comment.body|linebreaks }}</p>
+
     </div>
     {% empty %}
-        <p>Комментариев к этому сообщению пока нет.</p>
+        <p>No comments yet.</p>
     {% endfor %}
-
-    {% if new_comment %}
+    {% include "DjangoChat/paginator.html" with page=comments %}
+    </div>
+    <div class="new_comment">
+        {% if new_comment %}
         <h2>Your comment has been added.</h2>
     {% else %}
-        <h2>Add a new comment</h2>
+        <h2 class="start_comm">Add a new comment</h2>
         <form action="." method="post">
             {{ comment_form.as_p }}
             {% csrf_token %}
-            <p><input type="submit" value="Add comment"></p>
+            <p><input type="submit" value="Add comment" class="submit"></p>
         </form>
     {% endif %}
+    </div>
+
+    </div>
+
 {% endblock %}

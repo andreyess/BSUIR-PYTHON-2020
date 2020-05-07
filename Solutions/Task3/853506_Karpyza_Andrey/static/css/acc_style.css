@@ -1,0 +1,92 @@
+body {
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    margin: 0px;
+    height: 100vh;
+    background-size: contain;
+    position: center;
+}
+
+.centered{
+    vertical-align: center;
+    horiz-align: center;
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -150px;
+}
+
+.title{
+    margin-left: 30px;
+    margin-top: -70px;
+  color: #222222;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  transition: .3s linear;
+  position: absolute;
+}
+.name{
+    margin-top: -55px;
+  color: #3bc1a0;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 26px;
+  letter-spacing: 2px;
+  position: absolute;
+}
+main{
+    height: 400px;
+    width: 350px;
+    margin: -25px -50px 0 -25px;
+    background-color: ghostwhite;
+    border-color: #3bc1a0;
+    border-radius: 15px;
+    border-style: none;
+    padding: 5px;
+      overflow: hidden;
+}
+
+.functionality{
+    margin: 0 auto;
+    width: 300px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.functionality a{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: inherit;
+    color: #3bc1a0;
+}
+
+.functionality input{
+    background-color: #3bc1a0;
+    border-style: none;
+    border-radius: 2px;
+    color: ghostwhite;
+}
+
+.submit{
+    height: 30px;
+    width: 200px;
+    background-color: #3bc1a0;
+    color: ghostwhite;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 8px;
+}
+
+footer{
+    vertical-align: bottom;
+    horiz-align: center;
+    position: absolute;
+    top: 90vh;
+    left: 43%;
+}
+
+.all{
+    overflow: hidden;
+}

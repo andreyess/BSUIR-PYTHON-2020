@@ -16,6 +16,7 @@ class Post(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft')
+    like_count = models.IntegerField(default=0)
 
     class Meta:
         ordering = ('-publish',)
@@ -33,8 +34,7 @@ class Post(models.Model):
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, related_name='comments', on_delete=models.CASCADE)
-    name = models.CharField(max_length=80)
-    email = models.EmailField()
+    author = models.ForeignKey(User, related_name='comments', on_delete=models.CASCADE)
     body = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
@@ -44,4 +44,15 @@ class Comment(models.Model):
         ordering = ('created',)
 
     def __str__(self):
-        return 'Comment by {} on {}'.format(self.name, self.post)
+        return 'Comment by {} on {}'.format(self.author.username, self.post)
+
+
+class News(models.Model):
+    created = models.DateTimeField(auto_now_add=True)
+    body = models.TextField()
+    title = models.TextField()
+
+
+class Like(models.Model):
+    post = models.ForeignKey(Post, related_name='likes', on_delete=models.CASCADE)
+    author = models.ForeignKey(User, related_name='likes', on_delete=models.CASCADE)

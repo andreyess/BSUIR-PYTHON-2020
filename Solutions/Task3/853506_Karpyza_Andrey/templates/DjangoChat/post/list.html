@@ -18,14 +18,26 @@
             <h2>
             <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
             </h2>
-            <p class="date">
-                Published {{ post.publish }} by {{ post.author }}
+            <p>
+                <h1>Published {{ post.publish }} by {{ post.author }}</h1>
             </p>
+            <div class="message">
+                <h2>{{ post.body|truncatewords:30|linebreaks }}</h2>
+            </div>
         </div>
-        {{ post.body|truncatewords:30|linebreaks }}
+
     {% endfor %}
-    {% include "DjangoChat/paginator.html" with page=page_obj %}
+    {% include "DjangoChat/paginator.html" with page=posts %}
     </div>
+    <div class="news">
+        <div class="about">
+                <h1>NewsLetter</h1>
+                <h1>{{ news.title }}</h1>
+                <h2>Created {{ news.created }}</h2>
+                <p class="letter">{{ news.body }}</p>
+            </div>
+    </div>
+
 
     </div>
 

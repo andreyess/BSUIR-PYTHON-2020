@@ -12,6 +12,7 @@ header > a{
   transition: .3s linear;
   margin-left: 40%;
   margin-right: 40%;
+  height: 10vh;
   position: absolute;
 }
 
@@ -23,11 +24,11 @@ footer > div{
   margin-left: 40%;
   margin-bottom: 5%;
 }
-body {
+.body {
   background: linear-gradient(45deg, #EECFBA, #C5DDE8);
   margin: 0px;
-  background-size: cover;
   height: 100vh;
+  background-size: contain;
   position: relative;
 }
 main {
@@ -38,6 +39,7 @@ main {
   margin-right: 20px;
   height: 80vh;
   width: 90vw;
+  overflow: hidden;
 }
 nav {
   text-align: center;
@@ -135,3 +137,7 @@ nav a {
 }
 
 .submenu a:hover {background: #e8e8e8;}
+
+html {
+  overflow: hidden;
+}

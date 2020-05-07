@@ -1,3 +1,5 @@
+{% load static %}
+<link rel="stylesheet" href="{% static "css/pagination_styles.css" %}" />
 <div class="pagination">
     <span class="step-links">
         {% if page.has_previous %}
@@ -7,7 +9,7 @@
             Page {{ page.number }} of {{ page.paginator.num_pages }}.
         </span>
         {% if page.has_next %}
-            <a href="?page={{ page.next_page_number }}">Next</a>
+            <a href="?page={{ page.next_page_number }}" class="button">Next</a>
         {% endif %}
     </span>
 </div>

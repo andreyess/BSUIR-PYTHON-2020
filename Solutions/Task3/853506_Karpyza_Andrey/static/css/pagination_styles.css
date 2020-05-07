@@ -1,0 +1,18 @@
+
+.pagination a{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: inherit;
+    color: #3bc1a0;
+}
+
+.current{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: inherit;
+    color: #222222;
+}
+
+.pagination {
+    margin-top: 10px;
+}
