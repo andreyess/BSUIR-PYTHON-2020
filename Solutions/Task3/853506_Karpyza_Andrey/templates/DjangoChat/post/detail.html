@@ -14,7 +14,7 @@
         <a href="{% url "DjangoChat:post_share" post.id %}">Share this post</a>
     </p>
         <p>
-            <a href="like" class="no_effects"><img class="like"></a>{{ post.like_count }}
+            <a href="like" class="no_effects"><img class="like"></a><span class="likesp"> Число лайков: {{ post.like_count }}</span>
         </p>
     </div>
     <div class="comments">

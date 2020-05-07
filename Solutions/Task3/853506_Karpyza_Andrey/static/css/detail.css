@@ -24,13 +24,13 @@
 
 .post h2{
     font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
-    color: azure;
+    color: ghostwhite;
     size: 14px;
     font-size: 14px;
 }
 .post h3{
     font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
-    color: azure;
+    color: ghostwhite;
     size: 16px;
 }
 
@@ -104,4 +104,12 @@
 .no_effects{
    color: #000 !important;
    text-decoration: none;
+}
+
+.likesp{
+    font-family: 'Open Sans', sans-serif;
+    color: ghostwhite;
+    font-size: 20px;
+    vertical-align: center;
+    margin: 5px 3px 3px 0;
 }
