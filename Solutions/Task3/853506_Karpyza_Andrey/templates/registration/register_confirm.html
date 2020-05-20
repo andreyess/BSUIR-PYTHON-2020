@@ -1,0 +1,7 @@
+{% extends "DjangoChat/account_base.html" %}
+
+{% block title %}Welcome{% endblock %}
+{% block name %}Welcome {{ new_user.first_name }}!{% endblock %}
+{% block content %}
+        <p>Your account email has been successfully confirmed. Now you can <a href="{% url "login" %}">log in</a>.</p>
+{% endblock %}

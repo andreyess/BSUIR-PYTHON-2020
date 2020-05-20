@@ -1,12 +1,11 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Post, News, Like
+from .models import Post, News, Like, RegistrationMessage
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.generic import ListView
 from .forms import EmailPostForm, CommentForm, UserRegistrationForm
 from django.core.mail import send_mail
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
-
 
 def post_list(request):
     object_list = Post.objects.filter(status='published')
@@ -71,6 +70,7 @@ def post_detail(request, year, month, day, post):
                    })
 
 
+@login_required
 def post_like(request, year, month, day, post):
     post = get_object_or_404(Post, slug=post,
                              status='published',
@@ -154,7 +154,6 @@ def post_share(request, post_id):
                                                     'sent': sent})
 
 
-
 def register(request):
     if request.method == 'POST':
         user_form = UserRegistrationForm(request.POST)
@@ -169,3 +168,12 @@ def register(request):
     else:
         user_form = UserRegistrationForm()
     return render(request, 'registration/register.html', {'user_form': user_form})
+
+
+def register_confirm(request, key):
+    print(key)
+    message = get_object_or_404(RegistrationMessage, url=key)
+    print('MSG: {}'.format(message))
+    message.profile.verified = True
+    message.profile.save()
+    return render(request, 'registration/register_confirm.html')

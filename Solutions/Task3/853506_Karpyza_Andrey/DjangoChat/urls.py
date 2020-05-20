@@ -12,5 +12,4 @@ urlpatterns = [
         r'(?P<post>[-\w]+)/$',
         views.post_detail,
         name='post_detail'),
-
 ]

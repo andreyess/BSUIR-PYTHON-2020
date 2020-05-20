@@ -1,6 +1,11 @@
 from django.contrib import admin
-from .models import Post, Comment, Like, News
+from .models import Post, Comment, Like, News, Profile, RegistrationMessage
+from django.contrib.auth.models import User
 # Register your models here.
+
+
+class CommnetsInline(admin.TabularInline):
+    model = Comment
 
 
 class PostAdmin(admin.ModelAdmin):
@@ -11,6 +16,7 @@ class PostAdmin(admin.ModelAdmin):
     raw_id_fields = ('author',) # позволяет удобно искать юзера для во время создания нового поста
     date_hierarchy = 'publish' # сначала будут отображаться данные с пометкой publish
     ordering = ['status', 'publish']
+    inlines = [CommnetsInline]
 
 
 class CommentAdmin(admin.ModelAdmin):
@@ -29,7 +35,23 @@ class LikeAdmin(admin.ModelAdmin):
     list_display = ('post', 'author',)
 
 
+class UserInline(admin.StackedInline):
+    model = User
+
+
+class MessagesInline(admin.TabularInline):
+    model = RegistrationMessage
+
+
+class ProfileAdmin(admin.ModelAdmin):
+    raw_id_fields = ('user',)
+    list_display = ('verified', 'user',)
+    list_filter = ('verified',)
+    inlines = [MessagesInline]
+
+
 admin.site.register(Comment, CommentAdmin)
 admin.site.register(Post, PostAdmin)
 admin.site.register(Like, LikeAdmin)
 admin.site.register(News, NewsAdmin)
+admin.site.register(Profile, ProfileAdmin)
