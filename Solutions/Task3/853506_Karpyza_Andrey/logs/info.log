@@ -1,0 +1,10 @@
+Watching for file changes with StatReloader
+E:\853506_Karpyza_Andrey\ISP\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 3238
+E:\853506_Karpyza_Andrey\ISP\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 3238
+"GET /register/ HTTP/1.1" 200 1759
+"POST /register/ HTTP/1.1" 200 814
+"GET /login/ HTTP/1.1" 200 1476

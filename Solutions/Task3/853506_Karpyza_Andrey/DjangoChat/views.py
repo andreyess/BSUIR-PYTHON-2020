@@ -5,7 +5,7 @@ from django.views.generic import ListView
 from .forms import EmailPostForm, CommentForm, UserRegistrationForm
 from django.core.mail import send_mail
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.models import User
+
 
 def post_list(request):
     object_list = Post.objects.filter(status='published')

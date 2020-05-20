@@ -141,9 +141,40 @@ LOGIN_URL = '/login/'
 LOGOUT_URL = '/logout/'
 
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+LOGGING = {
+    'version':  1,
+    'disable_existing_loggers':  False,
+    'handlers':  {
+        'error':  {
+            'level':  'ERROR',
+            'class':  'logging.FileHandler',
+            'filename':  '{}/logs/error.log'.format(BASE_DIR),
+        },
+        'info':  {
+            'level':  'INFO',
+            'class':  'logging.FileHandler',
+            'filename':  '{}/logs/info.log'.format(BASE_DIR),
+        },
+        'debug':  {
+            'level':  'DEBUG',
+            'class':  'logging.FileHandler',
+            'filename':  '{}/logs/debug.log'.format(BASE_DIR),
+        },
+    },
+    'loggers':  {
+        'django':  {
+            'handlers':  ['debug', 'info', 'error'],
+            'level':  'DEBUG',
+            'propagate':  True,
+        },
+    },
+}
+
+
 
 PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 FIXTURE_DIRS = (
    os.path.join(PROJECT_DIR, 'fixtures'),
 )
+
+

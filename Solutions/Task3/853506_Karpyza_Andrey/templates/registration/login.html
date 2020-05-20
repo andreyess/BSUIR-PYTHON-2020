@@ -1,5 +1,4 @@
 {% extends "DjangoChat/account_base.html" %}
-{% load crispy_forms_tags %}
 {% block head %}
 {% endblock %}
 {% block name %}
@@ -13,7 +12,7 @@
 {% csrf_token %}
 <input type="hidden" name="next" value="{{ next }}">
 
-{{ form|crispy }}
+{{ form }}
 <p><a href="/password-reset/">Forgotten your password?</a></p>
 <button type="submit" class="submit">Log in</button>
 </form>
