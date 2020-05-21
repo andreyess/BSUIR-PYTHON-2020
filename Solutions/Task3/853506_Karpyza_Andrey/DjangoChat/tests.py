@@ -5,7 +5,7 @@ from django.test import Client
 
 from DjangoChat.forms import UserRegistrationForm
 from DjangoChat.models import *
-
+import ISP.settings
 
 @pytest.fixture(scope="function")
 def data_source(db):
@@ -127,6 +127,10 @@ def test_detail_like_url(db, data_source):
     assert c.login(username='test', password='test')
     response = c.get("/{}/{}/{}/{}/like".format(*data))
     assert response.status_code == 200
+    response = c.get("/{}/{}/{}/{}/like".format(*data))
+    assert response.status_code == 200
+    response = c.post("/{}/{}/{}/{}/like".format(*data), {'body': 'TestCommentNumberThree'})
+    assert response.status_code == 200
 
 
 def test_share_url(db, data_source):
@@ -137,6 +141,14 @@ def test_share_url(db, data_source):
     assert c.login(username='test', password='test')
     response = c.get("/{}/share/".format(post.id))
     assert response.status_code == 200
+    response = c.post("/{}/share/".format(post.id), {'to': 'andrey.karpyza@mail.ru', 'comments': 'check it'})
+    assert response.status_code == 200
+
+
+def test_register_get_url(db, data_source):
+    c = Client()
+    response = c.get('/register/')
+    assert response.status_code == 200
 
 
 @pytest.mark.parametrize("email,username,password,password2,result_code,acc_count",
@@ -144,7 +156,7 @@ def test_share_url(db, data_source):
                           ('Nonedefault@gmail.com', 'test', 'test', 'test', 200, 1),
                           ('Nonedefault@gmail.com', 'USERNAME', 'Nonedefault', 'test', 200, 1),
                           ('Nonedefault@gmail.com', 'USERNAME', 'Nonedefault', 'Nonedefault', 200, 2)])
-def test_register_url(db, data_source, email, username, password, password2, result_code, acc_count):
+def test_register_post_url(db, data_source, email, username, password, password2, result_code, acc_count):
     c = Client()
     response = c.post('/register/', {'username': username, 'first_name': 'name', 'password': password,
                           'password2': password2, 'email': email})

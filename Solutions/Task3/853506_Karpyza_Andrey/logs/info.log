@@ -1,10 +1,370 @@
-Watching for file changes with StatReloader
-E:\853506_Karpyza_Andrey\ISP\settings.py changed, reloading.
+Not Found: /2020/05/21/failure/
+Not Found: /register/confirmation/false
+Not Found: /2020/05/21/failure/
+Not Found: /register/confirmation/false
+Not Found: /2020/05/21/failure/
+Not Found: /register/confirmation/false
+Not Found: /2020/05/21/failure/
+Not Found: /register/confirmation/false
+Not Found: /2020/05/21/failure/
+Not Found: /register/confirmation/false
+Not Found: /2020/05/21/failure/
+Internal Server Error: /2020/05/21/testpost/like
+Traceback (most recent call last):
+  File "e:\djangoproject\isp\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "e:\djangoproject\isp\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "e:\djangoproject\isp\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "e:\djangoproject\isp\lib\site-packages\django\contrib\auth\decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "E:\853506_Karpyza_Andrey\DjangoChat\views.py", line 124, in post_like
+    'comment_form': comment_form,
+UnboundLocalError: local variable 'comment_form' referenced before assignment
+Not Found: /register/confirmation/false
+Not Found: /2020/05/21/failure/
+Not Found: /register/confirmation/false
+Not Found: /2020/05/21/failure/
+Not Found: /register/confirmation/false
+Not Found: /2020/05/21/failure/
+Not Found: /register/confirmation/false
+Not Found: /2020/05/21/failure/
+Not Found: /register/confirmation/false
+Not Found: /2020/05/21/failure/
+Not Found: /register/confirmation/false
 Watching for file changes with StatReloader
 "GET / HTTP/1.1" 200 3238
-E:\853506_Karpyza_Andrey\ISP\settings.py changed, reloading.
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4481
+E:\853506_Karpyza_Andrey\DjangoChat\forms.py changed, reloading.
 Watching for file changes with StatReloader
-"GET / HTTP/1.1" 200 3238
-"GET /register/ HTTP/1.1" 200 1759
-"POST /register/ HTTP/1.1" 200 814
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 1913
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 1913
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 8270
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6232
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/DjangoChat/profile/16/change/ HTTP/1.1" 200 8205
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"POST /admin/DjangoChat/profile/16/change/ HTTP/1.1" 302 0
+"GET /admin/DjangoChat/profile/16/change/ HTTP/1.1" 200 8696
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /register/confirmation/e06b95860a6082ae37ef08874f8eb5fade2549da HTTP/1.1" 200 820
 "GET /login/ HTTP/1.1" 200 1476
+"GET /admin/DjangoChat/profile/16/change/ HTTP/1.1" 200 8468
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 3246
+"GET /2020/05/19/gewgwegweg/ HTTP/1.1" 200 3647
+"GET /static/css/detail.css HTTP/1.1" 304 0
+"GET /static/images/like.png HTTP/1.1" 304 0
+"POST /2020/05/19/gewgwegweg/ HTTP/1.1" 200 3657
+"GET /2020/05/19/gewgwegweg/?page=2 HTTP/1.1" 200 3015
+"GET /2020/05/19/gewgwegweg/?page=1 HTTP/1.1" 200 3647
+"GET / HTTP/1.1" 200 3246
+"GET /?page=2 HTTP/1.1" 200 2890
+"GET /?page=1 HTTP/1.1" 200 3246
+"GET /password-change/ HTTP/1.1" 200 1844
+"POST /password-change/ HTTP/1.1" 200 1952
+"GET /password-change/ HTTP/1.1" 200 1844
+"POST /password-change/ HTTP/1.1" 302 0
+"GET /password-change/done/ HTTP/1.1" 200 1042
+Method Not Allowed (POST): /password-change/done/
+Method Not Allowed: /password-change/done/
+"POST /password-change/done/ HTTP/1.1" 405 0
+"GET /password-change/ HTTP/1.1" 200 1844
+"GET /password-change/done/ HTTP/1.1" 200 857
+"GET /password-change/done/ HTTP/1.1" 200 857
+"GET / HTTP/1.1" 200 3246
+"GET /password-change/done/ HTTP/1.1" 200 818
+"GET / HTTP/1.1" 200 3246
+"GET /password-change/done/ HTTP/1.1" 200 828
+"GET / HTTP/1.1" 200 3246
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 3238
+"GET /2020/05/19/gewgwegweg/ HTTP/1.1" 302 0
+"GET /login/?next=/2020/05/19/gewgwegweg/ HTTP/1.1" 200 1499
+"POST /login/?next=/2020/05/19/gewgwegweg/ HTTP/1.1" 302 0
+"GET /2020/05/19/gewgwegweg/ HTTP/1.1" 200 3647
+"GET /2020/05/19/gewgwegweg/like HTTP/1.1" 200 3647
+"POST /2020/05/19/gewgwegweg/ HTTP/1.1" 200 3657
+"GET /2020/05/19/gewgwegweg/?page=2 HTTP/1.1" 200 3217
+E:\853506_Karpyza_Andrey\DjangoChat\admin.py changed, reloading.
+Watching for file changes with StatReloader
+E:\853506_Karpyza_Andrey\DjangoChat\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 3246
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2063
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2063
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 8268
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6308
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/DjangoChat/profile/16/change/ HTTP/1.1" 200 8468
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"POST /admin/DjangoChat/profile/16/change/ HTTP/1.1" 302 0
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6515
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/DjangoChat/profile/10/change/ HTTP/1.1" 200 8472
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"POST /admin/DjangoChat/profile/10/change/ HTTP/1.1" 302 0
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6517
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"POST /admin/DjangoChat/profile/ HTTP/1.1" 302 0
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6308
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/DjangoChat/profile/16/change/ HTTP/1.1" 200 8205
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6308
+"GET /admin/DjangoChat/profile/11/change/ HTTP/1.1" 200 8217
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6308
+"GET /admin/DjangoChat/profile/10/change/ HTTP/1.1" 200 8464
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6308
+Watching for file changes with StatReloader
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6308
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"POST /admin/DjangoChat/profile/ HTTP/1.1" 302 0
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6308
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+E:\853506_Karpyza_Andrey\DjangoChat\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/DjangoChat/profile/
+Traceback (most recent call last):
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: DjangoChat_registrationmessage.profile_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\DjangoProject\ISP\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\contrib\admin\sites.py", line 231, in inner
+    return view(request, *args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\contrib\admin\options.py", line 1704, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "E:\DjangoProject\ISP\lib\site-packages\django\contrib\admin\options.py", line 1390, in response_action
+    response = func(self, request, queryset)
+  File "E:\853506_Karpyza_Andrey\DjangoChat\admin.py", line 49, in send_confirmation
+    msg = RegistrationMessage.objects.create(profile=profile, sended=False)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\models\base.py", line 745, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\models\base.py", line 782, in save_base
+    updated = self._save_table(
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\models\base.py", line 887, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\models\base.py", line 924, in _do_insert
+    return manager._insert(
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\models\sql\compiler.py", line 1391, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: DjangoChat_registrationmessage.profile_id
+"POST /admin/DjangoChat/profile/ HTTP/1.1" 500 203403
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6308
+"GET /admin/DjangoChat/profile/16/change/ HTTP/1.1" 200 8460
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6308
+"GET /admin/DjangoChat/profile/11/change/ HTTP/1.1" 200 8217
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6308
+"GET /admin/DjangoChat/profile/10/change/ HTTP/1.1" 200 8464
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6308
+E:\853506_Karpyza_Andrey\DjangoChat\models.py changed, reloading.
+Watching for file changes with StatReloader
+E:\853506_Karpyza_Andrey\DjangoChat\models.py changed, reloading.
+Watching for file changes with StatReloader
+E:\853506_Karpyza_Andrey\DjangoChat\admin.py changed, reloading.
+Watching for file changes with StatReloader
+E:\853506_Karpyza_Andrey\DjangoChat\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6302
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/DjangoChat/profile/16/change/ HTTP/1.1" 200 8460
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"POST /admin/DjangoChat/profile/16/change/ HTTP/1.1" 302 0
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6509
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/DjangoChat/profile/10/change/ HTTP/1.1" 200 8464
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6302
+Internal Server Error: /admin/DjangoChat/profile/
+Traceback (most recent call last):
+  File "E:\DjangoProject\ISP\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\contrib\admin\sites.py", line 231, in inner
+    return view(request, *args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\contrib\admin\options.py", line 1704, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "E:\DjangoProject\ISP\lib\site-packages\django\contrib\admin\options.py", line 1390, in response_action
+    response = func(self, request, queryset)
+  File "E:\853506_Karpyza_Andrey\DjangoChat\admin.py", line 49, in send_confirmation
+    if not profile.verified and not RegistrationMessage.objects.get(profile=profile):
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\models\query.py", line 415, in get
+    raise self.model.DoesNotExist(
+DjangoChat.models.RegistrationMessage.DoesNotExist: RegistrationMessage matching query does not exist.
+"POST /admin/DjangoChat/profile/ HTTP/1.1" 500 127533
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6302
+E:\853506_Karpyza_Andrey\DjangoChat\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /admin/DjangoChat/profile/
+Traceback (most recent call last):
+  File "E:\DjangoProject\ISP\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\contrib\admin\sites.py", line 231, in inner
+    return view(request, *args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\contrib\admin\options.py", line 1704, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "E:\DjangoProject\ISP\lib\site-packages\django\contrib\admin\options.py", line 1390, in response_action
+    response = func(self, request, queryset)
+  File "E:\853506_Karpyza_Andrey\DjangoChat\admin.py", line 50, in send_confirmation
+    response = RegistrationMessage.objects.get(profile=profile)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\models\query.py", line 415, in get
+    raise self.model.DoesNotExist(
+DjangoChat.models.RegistrationMessage.DoesNotExist: RegistrationMessage matching query does not exist.
+"POST /admin/DjangoChat/profile/ HTTP/1.1" 500 127525
+E:\853506_Karpyza_Andrey\DjangoChat\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6302
+Internal Server Error: /admin/DjangoChat/profile/
+Traceback (most recent call last):
+  File "E:\DjangoProject\ISP\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\contrib\admin\sites.py", line 231, in inner
+    return view(request, *args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\contrib\admin\options.py", line 1704, in changelist_view
+    response = self.response_action(request, queryset=cl.get_queryset(request))
+  File "E:\DjangoProject\ISP\lib\site-packages\django\contrib\admin\options.py", line 1390, in response_action
+    response = func(self, request, queryset)
+  File "E:\853506_Karpyza_Andrey\DjangoChat\admin.py", line 51, in send_confirmation
+    response = RegistrationMessage.objects.get(profile=profile)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "E:\DjangoProject\ISP\lib\site-packages\django\db\models\query.py", line 415, in get
+    raise self.model.DoesNotExist(
+DjangoChat.models.RegistrationMessage.DoesNotExist: RegistrationMessage matching query does not exist.
+"POST /admin/DjangoChat/profile/ HTTP/1.1" 500 127508
+E:\853506_Karpyza_Andrey\DjangoChat\admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6302
+"POST /admin/DjangoChat/profile/ HTTP/1.1" 302 0
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6302
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/DjangoChat/profile/16/change/ HTTP/1.1" 200 8460
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6302
+"GET /admin/DjangoChat/profile/10/change/ HTTP/1.1" 200 8464
+"GET /admin/jsi18n/ HTTP/1.1" 200 3223
+"GET /admin/DjangoChat/profile/ HTTP/1.1" 200 6302
+Not Found: /2020/05/21/failure/
+Not Found: /register/confirmation/false
+Not Found: /2020/05/21/failure/
+Not Found: /register/confirmation/false
+Watching for file changes with StatReloader
+"GET /register/confirmation/e06b95860a6082ae37ef08874f8eb5fade2549da HTTP/1.1" 200 820
+"GET /login/ HTTP/1.1" 200 1476
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 3246
+"GET / HTTP/1.1" 200 3246
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 3238
+"GET /login/ HTTP/1.1" 200 1476
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 3246
+"GET / HTTP/1.1" 200 3246
+"GET /logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 3238
+"GET /login/ HTTP/1.1" 200 1476
+"POST /login/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 3246
+"GET /2020/05/19/gewgwegweg/ HTTP/1.1" 200 3647

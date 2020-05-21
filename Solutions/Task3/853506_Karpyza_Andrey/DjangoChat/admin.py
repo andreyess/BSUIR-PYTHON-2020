@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Post, Comment, Like, News, Profile, RegistrationMessage
 from django.contrib.auth.models import User
+from DjangoChat.MessageProcessing import MessageQueue
 # Register your models here.
 
 
@@ -43,11 +44,23 @@ class MessagesInline(admin.TabularInline):
     model = RegistrationMessage
 
 
+def send_confirmation(modeladmin,  request,  queryset):
+    for profile in queryset:
+        if not profile.verified:
+            try:
+                response = RegistrationMessage.objects.get(profile=profile)
+            except Exception:
+                msg = RegistrationMessage.objects.create(profile=profile, sended=False)
+                MessageQueue.AddMessageInQueue(msg)
+send_confirmation.short_description =  "Send confirmation email"
+
+
 class ProfileAdmin(admin.ModelAdmin):
     raw_id_fields = ('user',)
     list_display = ('verified', 'user',)
     list_filter = ('verified',)
     inlines = [MessagesInline]
+    actions = [send_confirmation]
 
 
 admin.site.register(Comment, CommentAdmin)

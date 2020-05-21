@@ -4,7 +4,6 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from django.db.models.signals import post_save
 from django.dispatch import receiver
-from DjangoChat.MessageProcessing import MessageQueue
 
 
 class Post(models.Model):
@@ -86,11 +85,3 @@ class RegistrationMessage(models.Model):
     time = models.DateTimeField(auto_now=True)
     url = models.TextField()
     sended = models.BooleanField(default=False)
-
-
-@receiver(post_save, sender=RegistrationMessage)
-def send_message_for_registrate(sender, instance, **kwargs):
-    if not instance.sended:
-        MessageQueue.AddMessageInQueue(instance)
-    else:
-        pass

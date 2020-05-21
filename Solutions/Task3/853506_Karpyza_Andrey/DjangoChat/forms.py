@@ -40,6 +40,7 @@ class UserRegistrationForm(forms.ModelForm):
 
 
 class LoginRequiredView(LoginView):
+
     def form_valid(self, form):
         user = form.get_user()
         if not user.profile.verified:

@@ -80,22 +80,23 @@ def post_like(request, year, month, day, post):
     comment_objects = post.comments.filter(active=True)
     paginator = Paginator(comment_objects, 5)
     page = request.GET.get('page')
-    likes = Like.objects.filter(post=post)
-    is_liked = True
-    for l in likes:
-        if l.author == request.user:
-            is_liked = False
-            post.like_count-=1
+    if request.method == 'GET':
+        likes = Like.objects.filter(post=post)
+        is_liked = True
+        for l in likes:
+            if l.author == request.user:
+                is_liked = False
+                post.like_count-=1
+                post.save()
+                l.delete()
+                break
+        if is_liked:
+            post.like_count += 1
             post.save()
-            l.delete()
-            break
-    if is_liked:
-        post.like_count += 1
-        post.save()
-        like = Like()
-        like.author = request.user
-        like.post = post
-        like.save()
+            like = Like()
+            like.author = request.user
+            like.post = post
+            like.save()
     if request.method == 'POST':
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
